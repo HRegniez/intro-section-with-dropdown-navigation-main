@@ -6,19 +6,21 @@
   font-size: 18px;
 }
 
+a {
+  color: hsl(0deg, 0%, 41%);
+  text-decoration: none;
+}
+
 header {
   padding: 1rem;
   position: relative;
+  background-color: hsl(0deg, 0%, 98%);
 }
 
 li {
   list-style-type: none;
   color: hsl(0deg, 0%, 41%);
   cursor: pointer;
-}
-li a {
-  color: hsl(0deg, 0%, 41%);
-  text-decoration: none;
 }
 
 .burger div {
@@ -32,6 +34,7 @@ li a {
   position: absolute;
   height: 100vh;
   right: 0;
+  top: 0;
   display: flex;
 }
 .nav_shader {
@@ -41,13 +44,43 @@ li a {
 }
 .nav_main {
   background-color: hsl(0deg, 0%, 98%);
+  margin-top: 3rem;
   height: 100vh;
-  width: 50vw;
+  width: 60vw;
 }
 
+.menu li {
+  margin: 1rem;
+  font-size: 0.9rem;
+}
+.menu li img {
+  margin-left: 0.5rem;
+}
 .menu_hidden {
+  z-index: 1;
   height: 0px;
   overflow: hidden;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+.login a {
+  text-decoration: none;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  border-radius: 0.6rem;
+}
+.login_register {
+  border: 2px solid hsl(0deg, 0%, 41%);
 }
 
 .mobile_contain {
