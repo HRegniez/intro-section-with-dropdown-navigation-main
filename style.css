@@ -49,17 +49,29 @@ li {
   width: 60vw;
 }
 
+.menu {
+  z-index: 1;
+}
+.menu_pop-up {
+  height: 0px;
+  overflow: hidden;
+}
+.menu_pop-down {
+  height: auto;
+}
 .menu li {
-  margin: 1rem;
+  margin: 1.4rem;
   font-size: 0.9rem;
 }
 .menu li img {
   margin-left: 0.5rem;
 }
-.menu_hidden {
-  z-index: 1;
-  height: 0px;
-  overflow: hidden;
+
+.inner-nav img {
+  margin-right: 0.8rem;
+}
+.inner-nav a {
+  font-size: 0.9rem;
 }
 
 .login {
