@@ -48,6 +48,16 @@ li {
   height: 100vh;
   width: 60vw;
 }
+.nav_hidden {
+  transform: translateX(100%);
+  opacity: 0%;
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
 
 .menu {
   z-index: 1;
@@ -107,4 +117,38 @@ main {
 }
 main img {
   width: 100vw;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+}
+.main h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main p {
+  font-size: 0.9rem;
+  margin: 0 1rem 2.5rem 1rem;
+  line-height: 1.6rem;
+  font-weight: light;
+}
+.main_button {
+  padding: 1rem;
+  background-color: hsl(0deg, 0%, 8%);
+  border-radius: 0.8rem;
+  color: hsl(0deg, 0%, 98%);
+}
+.main_logos {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  margin-top: 4rem;
+}
+.main_logos a {
+  width: 25%;
+}
+.main_logos img {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
