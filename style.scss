@@ -38,7 +38,9 @@ li {
     }
 }
 
-//--------Mobile Nav pop up style
+//------------------------------Navigation
+
+//--------Mobile Nav
 .nav {
     position: absolute;
     height: 100vh;
@@ -72,7 +74,7 @@ li {
     display: none;
 }
 
-//----------Navigation
+//---------------Pop-downs
 .menu {
 
     z-index: 1;
@@ -142,11 +144,11 @@ li {
 
 
 main {
-    max-width: 100vw;
-    
+    width: 100vw;
+    max-width: 460px;
+    margin: 0 auto 0 auto;
     img {
-        width: 100vw;
-        max-width: 460px;
+        width: 100%;
     }
 }
 
@@ -183,6 +185,82 @@ main {
         }
         img {
             width: 80%;
+        }
+    }
+}
+
+//-------------------Media Queries
+
+@media screen and (min-width: 900px) {
+
+    //------------Nav ( @ 900px )
+    header {
+        display: flex;
+    }
+    .mobile_contain {
+        min-width: 0%;
+    }
+    .burger {
+        display: none;
+    }
+    .nav {
+        display: block;
+        position: relative;
+        height: auto;
+        display: flex;
+        opacity: 100%;
+
+        &_hidden {
+            opacity: 100%;
+            display: block;
+            transform: translateY(0%);
+        }
+        &_shader  {
+            display: none;
+            background-color: none;
+            height: 0;
+            width: 0;
+        }
+        &_main {
+            height: auto;
+            width: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            width: 75vw;
+        }
+        
+    }
+    .menu {
+        display: flex;     
+        li {
+            margin: auto 1rem;
+            width: 5rem;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .login {
+        flex-direction: row;
+        width: 30%;
+        a {
+            width: auto;
+        }
+    }
+    //------------Main ( @ 900px )
+    main {
+        max-width: 100vw;
+    }
+    .main {
+        &_flex {
+            margin-left: 10rem;
+            margin-right: 10rem;
+            display: flex;
+            flex-direction: row-reverse;
         }
     }
 }
