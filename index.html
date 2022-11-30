@@ -28,7 +28,7 @@
       </div>
       
 
-      <div class="nav"> <!----------------------------------------------------Navigation-->
+      <div id="nav" class="nav_hidden"> <!----------------------------------------------------Navigation-->
         
         <div class="nav_shader"></div>
 
@@ -36,10 +36,10 @@
 
           <ul class="menu">
 
-            <li>
-              Features <img src="./images/icon-arrow-down.svg" class="arrow" alt="pop-down icon"> 
+            <li id="features">
+              Features <img id="arrow_1" src="./images/icon-arrow-down.svg" class="arrow" alt="pop-down icon"> 
               
-              <div class="menu_pop-up">  <!--------------------Hidden Menu 1-->
+              <div id="features_pop-down" class="menu_pop-up">  <!--------------------Hidden Menu 1-->
       
                 <ul class="inner-nav">
       
@@ -63,10 +63,10 @@
       
             </li>
       
-            <li>
-              Company <img src="./images/icon-arrow-down.svg" class="arrow" alt="pop-down icon">  
+            <li id="company">
+              Company <img id="arrow_2" src="./images/icon-arrow-down.svg" class="arrow" alt="pop-down icon">  
               
-              <div class="menu_pop-down_2">  <!--------------------Hidden Menu 2-->
+              <div id='company_pop-down' class="menu_pop-up_2">  <!--------------------Hidden Menu 2-->
       
                 <ul class="inner-nav">
       
@@ -147,7 +147,7 @@
 
 
     <footer>  
-
+      <script src="./app.js"></script>
     </footer>
   </body>
 </html>

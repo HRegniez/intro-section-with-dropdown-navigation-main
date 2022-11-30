@@ -27,6 +27,9 @@ li {
   cursor: pointer;
 }
 
+.burger {
+  z-index: 1;
+}
 .burger div {
   width: 25px;
   height: 2px;
@@ -67,6 +70,10 @@ li {
   z-index: 1;
 }
 .menu_pop-up {
+  height: 0px;
+  overflow: hidden;
+}
+.menu_pop-up_2 {
   height: 0px;
   overflow: hidden;
 }
@@ -248,7 +255,7 @@ main img {
     width: 100%;
   }
   .inner-nav li {
-    margin: 0;
+    margin: 0 0 0 0.5rem;
   }
   .inner-nav a {
     font-size: 0.8rem;

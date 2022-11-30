@@ -33,12 +33,29 @@ Users should be able to:
 
 ## My process
 
-- HTML stucture
+- HTML stucture -done
+
 - SCSS to style
-  - mobile style first
-  - desktop style
+
+  - mobile style -done
+  - desktop style -done
   - active states
+    - menu -done
+    - pop-downs -done
+    - buttons
+    - nav links
+    - burger
+  - animation
+    - pop-downs
+    - menu (mob)
+    - hovers
+
 - JavaScript to animate
+  - pop-down 1 -done
+  - pop-down 2 -done
+  - pop down arrows - see openclassrooms animation course
+  - menu pop-up (mob) - done
+  - burger (mob) - youtube dev ed
 
 ### Built with
 
@@ -51,6 +68,10 @@ Users should be able to:
 ### Continued development
 
 -On firefox the header's nav-bar needs to be fixed, elements out of the div
+
+-nav pop-downs badly coded, have to have one js scrpt per pop-down \*styled the pop-down <div> instead of it's contents
+
+-should wrap my 'features' and 'compagny in a div so that the click area is bigger
 
 ### Useful resources
 

@@ -31,7 +31,7 @@ li {
     cursor: pointer;
 }
 .burger {
-
+    z-index: 1;
     div {
         width: 25px;
         height: 2px;
@@ -85,6 +85,10 @@ li {
 
         height: 0px;
         overflow: hidden;
+        &_2 {
+            height: 0px;
+            overflow: hidden;    
+        }
         }
 
     &_pop-down {
@@ -287,7 +291,7 @@ main {
         padding: 0.5rem;
         width: 100%;
         li {
-            margin: 0;
+            margin: 0 0 0 0.5rem;
         }
         a {
             font-size: 0.8rem;
