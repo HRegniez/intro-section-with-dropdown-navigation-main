@@ -90,6 +90,9 @@ li {
     &_pop-down {
         height: auto;
     }
+    &_pop-down_2 {
+        height: auto;
+    }
     li {
         margin: 1.4rem;
         font-size: 0.9rem;
@@ -215,12 +218,16 @@ main {
         height: auto;
         display: flex;
         opacity: 100%;
+        width: 85%;
+        margin-left: 2rem;
 
         &_hidden {
             opacity: 100%;
             display: block;
             transform: translateY(0%);
-            width: 100%;
+            width: 85%;
+            margin-left: 2rem;
+            margin-right: 1rem;
         }
         &_shader  {
             display: none;
@@ -245,10 +252,49 @@ main {
             width: 5rem;
             display: flex;
             align-items: center;
-            img {
+            position: relative;
+            
+        }
+        .arrow {
                 width: 100%;
                 height: 100%;
             }
+        &_pop-down {
+            position: absolute;
+            top: 2rem;
+            left: -3rem;
+            width: 150px;
+            background-color: white;
+            box-shadow: 6px 6px 102px -41px  $clr-prim3;
+            border-radius: 0.5rem;
+            height: 160px;
+            &_2 {
+                position: absolute;
+                top: 2rem;
+                width: 120px;
+                background-color: white;
+                box-shadow: 6px 6px 102px -41px  $clr-prim3;
+                border-radius: 0.5rem;
+                height: 130px;
+            }
+        }
+    }
+    .inner-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 0.5rem;
+        width: 100%;
+        li {
+            margin: 0;
+        }
+        a {
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        img {
+            margin: 0 0.5rem 0 0;
         }
     }
     .login {
@@ -267,7 +313,7 @@ main {
     .main {
         text-align: left;
         margin-left: 1rem;
-        margin-right: 6.5rem;
+        margin-right: 8vw;
         h1 {
             font-size: 4rem;
             margin-top: 5rem;
@@ -284,6 +330,11 @@ main {
             margin-right: 10rem;
             display: flex;
             flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            picture {
+                min-width: 370px;
+            }
         }
     }
 }
