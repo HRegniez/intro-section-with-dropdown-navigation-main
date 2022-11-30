@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
 header {
   padding: 1rem;
   position: relative;
@@ -162,6 +166,9 @@ main img {
   .mobile_contain {
     min-width: 0%;
   }
+  .mobile_contain img {
+    margin-left: 1rem;
+  }
   .burger {
     display: none;
   }
@@ -176,6 +183,7 @@ main img {
     opacity: 100%;
     display: block;
     transform: translateY(0%);
+    width: 100%;
   }
   .nav_shader {
     display: none;
@@ -189,7 +197,7 @@ main img {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    width: 75vw;
+    width: 100%;
   }
   .menu {
     display: flex;
@@ -206,13 +214,31 @@ main img {
   }
   .login {
     flex-direction: row;
-    width: 30%;
+    width: 20%;
   }
   .login a {
     width: auto;
+    padding: 0.7rem 1.2rem;
+    margin-left: 1rem;
   }
   main {
     max-width: 100vw;
+  }
+  .main {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 6.5rem;
+  }
+  .main h1 {
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-right: 1rem;
+  }
+  .main p {
+    margin-left: 0;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    margin-bottom: 4rem;
   }
   .main_flex {
     margin-left: 10rem;

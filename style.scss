@@ -17,7 +17,9 @@ a {
 }
 
 //-----------------------------------------HEADER
-
+body {
+    background-color: $clr-prim1;
+}
 header {
     padding: 1rem;
     position: relative;
@@ -113,6 +115,7 @@ li {
     align-items: center;
     width: 100%;
     padding: 1rem;
+    
 
     a {
         text-decoration: none;
@@ -199,6 +202,9 @@ main {
     }
     .mobile_contain {
         min-width: 0%;
+        img {
+            margin-left: 1rem;
+        }
     }
     .burger {
         display: none;
@@ -214,6 +220,7 @@ main {
             opacity: 100%;
             display: block;
             transform: translateY(0%);
+            width: 100%;
         }
         &_shader  {
             display: none;
@@ -227,7 +234,7 @@ main {
             margin: auto;
             display: flex;
             justify-content: space-between;
-            width: 75vw;
+            width: 100%;
         }
         
     }
@@ -246,9 +253,11 @@ main {
     }
     .login {
         flex-direction: row;
-        width: 30%;
+        width: 20%;
         a {
             width: auto;
+            padding: 0.7rem 1.2rem;
+            margin-left: 1rem;
         }
     }
     //------------Main ( @ 900px )
@@ -256,6 +265,20 @@ main {
         max-width: 100vw;
     }
     .main {
+        text-align: left;
+        margin-left: 1rem;
+        margin-right: 6.5rem;
+        h1 {
+            font-size: 4rem;
+            margin-top: 5rem;
+            margin-right: 1rem;
+        }
+        p {
+            margin-left: 0;
+            margin-top: 2.5rem;
+            font-size: 1rem;
+            margin-bottom: 4rem;
+        }
         &_flex {
             margin-left: 10rem;
             margin-right: 10rem;
