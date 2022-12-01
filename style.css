@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
+  transition: all 0.3s ease-in;
 }
 
 a {
@@ -26,6 +27,12 @@ li {
   color: hsl(0deg, 0%, 41%);
   cursor: pointer;
 }
+li:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+li a:hover {
+  color: hsl(0deg, 0%, 8%);
+}
 
 .burger {
   z-index: 1;
@@ -34,7 +41,7 @@ li {
   width: 25px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: black;
+  background-color: hsl(0deg, 0%, 8%);
 }
 
 .nav {
@@ -115,8 +122,15 @@ li {
   margin-top: 0.4rem;
   border-radius: 0.6rem;
 }
+.login a:hover {
+  color: hsl(0deg, 0%, 8%);
+}
 .login_register {
   border: 2px solid hsl(0deg, 0%, 41%);
+}
+.login_register:hover {
+  color: hsl(0deg, 0%, 8%);
+  border: 2px solid hsl(0deg, 0%, 8%);
 }
 
 .mobile_contain {
@@ -149,12 +163,18 @@ main img {
   margin: 0 1rem 2.5rem 1rem;
   line-height: 1.6rem;
   font-weight: light;
+  color: hsla(0deg, 0%, 8%, 0.6);
 }
 .main_button {
   padding: 1rem;
   background-color: hsl(0deg, 0%, 8%);
   border-radius: 0.8rem;
   color: hsl(0deg, 0%, 98%);
+  border: 2px solid hsl(0deg, 0%, 8%);
+}
+.main_button:hover {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
 }
 .main_logos {
   display: flex;
@@ -171,6 +191,16 @@ main img {
 
 .active {
   transform: rotateZ(180deg);
+}
+
+.toggle .burger_1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .burger_2 {
+  opacity: 0;
+}
+.toggle .burger_3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media screen and (min-width: 900px) {
@@ -233,6 +263,23 @@ main img {
   }
   .menu .arrow {
     width: 0.5rem;
+  }
+  .menu_pop-up {
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    width: 150px;
+    background-color: white;
+    box-shadow: 6px 6px 102px -41px hsl(0deg, 0%, 8%);
+    border-radius: 0.5rem;
+  }
+  .menu_pop-up_2 {
+    position: absolute;
+    top: 2rem;
+    width: 120px;
+    background-color: white;
+    box-shadow: 6px 6px 102px -41px hsl(0deg, 0%, 8%);
+    border-radius: 0.5rem;
   }
   .menu_pop-down {
     position: absolute;

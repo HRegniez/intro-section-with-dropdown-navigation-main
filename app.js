@@ -26,6 +26,7 @@ companyBtn.onclick = () => {
 burger.onclick = () => {
     navPop.classList.toggle('nav_hidden');
     navPop.classList.toggle('nav');
+    burger.classList.toggle('toggle');
 }
 
 

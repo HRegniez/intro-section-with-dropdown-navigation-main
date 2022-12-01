@@ -9,6 +9,7 @@ $clr-prim4: hsl(0, 0%, 8%, 0.6);
     padding: 0;
     font-family: 'Epilogue', sans-serif;
     font-size: 18px;
+    transition: all 0.3s ease-in;
 }
 
 a {
@@ -31,6 +32,16 @@ li {
     list-style-type: none;
     color: $clr-prim2;
     cursor: pointer;
+
+    &:hover {
+        color: $clr-prim3;
+    }
+
+    a {
+        &:hover {
+            color: $clr-prim3;
+        }
+    }
 }
 
 .burger {
@@ -40,7 +51,7 @@ li {
         width: 25px;
         height: 2px;
         margin-bottom: 5px;
-        background-color: black;
+        background-color: $clr-prim3;
     }
 }
 
@@ -142,11 +153,22 @@ li {
         font-size: 0.8rem;
         margin-top: 0.4rem;
         border-radius: 0.6rem;
+
+        &:hover {
+            color: $clr-prim3;
+        }
     }
 
     &_register {
         border: 2px solid $clr-prim2;
+
+        &:hover {
+            color: $clr-prim3;
+            border: 2px solid $clr-prim3;
+        }
     }
+
+
 }
 
 
@@ -188,6 +210,7 @@ main {
         margin: 0 1rem 2.5rem 1rem;
         line-height: 1.6rem;
         font-weight: light;
+        color: $clr-prim4;
     }
 
     &_button {
@@ -195,6 +218,12 @@ main {
         background-color: $clr-prim3;
         border-radius: 0.8rem;
         color: $clr-prim1;
+        border: 2px solid $clr-prim3;
+
+        &:hover {
+            background-color: $clr-prim1;
+            color: $clr-prim3;
+        }
     }
 
     &_logos {
@@ -213,11 +242,25 @@ main {
     }
 }
 
+//-------------------Animations
+
 .active {
     transform: rotateZ(180deg);
 }
 
+.toggle {
+    .burger_1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
 
+    .burger_2 {
+        opacity: 0;
+    }
+
+    .burger_3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
 
 //-------------------Media Queries
 
@@ -295,6 +338,25 @@ main {
 
         .arrow {
             width: 0.5rem;
+        }
+
+        &_pop-up {
+            position: absolute;
+            top: 2rem;
+            left: -3rem;
+            width: 150px;
+            background-color: white;
+            box-shadow: 6px 6px 102px -41px $clr-prim3;
+            border-radius: 0.5rem;
+
+            &_2 {
+                position: absolute;
+                top: 2rem;
+                width: 120px;
+                background-color: white;
+                box-shadow: 6px 6px 102px -41px $clr-prim3;
+                border-radius: 0.5rem;
+            }
         }
 
         &_pop-down {

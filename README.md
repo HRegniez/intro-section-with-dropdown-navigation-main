@@ -34,28 +34,12 @@ Users should be able to:
 ## My process
 
 - HTML stucture -done
-
 - SCSS to style
-
   - mobile style -done
   - desktop style -done
   - active states
-    - menu -done
-    - pop-downs -done
-    - buttons
-    - nav links
-    - burger
-  - animation
-    - pop-downs
-    - menu (mob)
-    - hovers
-
+  - animations
 - JavaScript to animate
-  - pop-down 1 -done
-  - pop-down 2 -done
-  - pop down arrows - done
-  - menu pop-up (mob) - done
-  - burger (mob) - youtube dev ed
 
 ### Built with
 
