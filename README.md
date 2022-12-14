@@ -51,6 +51,10 @@ Users should be able to:
 
 ### Continued development
 
+- revisit animations
+
+- finish readme
+
 - nav pop-downs badly coded, have to have one js scrpt per pop-down \*styled the pop-down <div> instead of it's contents
 
 - should wrap my 'features' and 'compagny in a div so that the click area is bigger
